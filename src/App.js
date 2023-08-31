@@ -12,7 +12,7 @@ function App() {
     <React.Fragment>
       <MainHeader onLogout={ctx.logoutHandler} />
       <main>
-        {!ctx.isLoggedIn && <Login onLogin={ctx.onLogin} />}
+        {!ctx.isLoggedIn && <Login />}
         {ctx.isLoggedIn && <Home />}
       </main>
     </React.Fragment>
